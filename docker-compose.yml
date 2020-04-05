@@ -2,6 +2,8 @@ version: '3'
 services:
   teisis:
     build: .
+    container_name: TeISIS
+    restart: always
     volumes:
       - ./waves:/app/waves
       - ./trained:/app/trained
