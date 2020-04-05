@@ -1,0 +1,11 @@
+version: '3'
+services:
+  teisis:
+    build: .
+    volumes:
+      - ./waves:/app/waves
+      - ./trained:/app/trained
+      - ./config:/app/config      
+    ports:
+      - "5000:5000"
+

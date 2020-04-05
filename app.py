@@ -1,4 +1,4 @@
-#!flask/bin/python
+#!flask/bin/python2
 from flask import Flask, jsonify, request
 import librosa as lr
 import warnings
@@ -354,4 +354,4 @@ def auth():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0')
